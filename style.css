@@ -1,1 +1,110 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
 
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+body > * {
+    flex-basis: 1000%;
+}
+
+.song-preview-card {
+    margin: 30px 16px 30px 16px;
+    background-color: #9296C4;
+    width: 100%;
+    height: 100%;
+    max-width: 413px;
+    max-height: 607px;
+    border-radius: 24px;
+    padding: 16px;
+    color: white;
+    flex-wrap: wrap;
+    position: relative;
+
+}
+  
+    .song-preview-card__image-container {
+      position: relative;
+      border-radius: 16px;
+      width: 100%;
+      height: auto;
+      overflow: hidden;
+    }
+     
+    .song-preview-card__image {
+        position: relative;
+      width: 100%;
+    }
+
+    .song-preview-card__content {
+      margin-top: 7px;
+      padding: 16px;
+    }
+  
+    .song-preview-card__title {
+      font-size: 24px;
+      line-height: 1.4em;
+      font-weight: 700;
+    }
+  
+    .song-preview-card__artist-and-time {
+      margin-top: 11px;
+      width: 100%;
+      font-weight: 400;
+      font-size: 18px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .song-preview-card__time {
+        display: flex;
+        gap: 10px;
+    }
+ 
+    .divider {
+        width: 100%;
+        margin: 8% 0 8% 0;
+        display: block;
+        position: relative;
+        
+    }
+
+    .song-preview-card__album-cover-and-info {
+        display: flex;
+    }
+
+    .song-preview-card__album-info-container {
+        position: relative;
+        display: flex;
+        padding-left: 16px;
+        align-items: center;
+        gap: 10px;
+        }
+
+    .song-preview-card__album-cover-container {
+        position: relative;
+        float: left;
+
+        }
+    
+
+    @media (max-width: 375px) {
+        .song-preview-card > * {
+            flex-basis: 100%;
+            font-size: .8rem;
+        }
+  
+        .song-preview-card__artist {
+            font-size: .9rem;
+        }
+        .song-preview-card__time {
+            font-size: .9rem;
+        }
+
+        .song-preview-card__image-container {
+            width: 100%;
+            height: auto;
+        }
+    }
